@@ -4,8 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#26AE90"
+    android:background="@color/input_login_hint"
     tools:context=".activity.DestinationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/TitleDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingStart="40dp"
+            android:text="SMART PARK - Select Destination"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <ImageView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/Root"
+        android:layout_marginTop="40dp"
+        android:paddingStart="90dp"
+        android:paddingEnd="20dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:text="SELECT YOUR DESTINATION"
+        android:textColor="@color/white"/>
+
 
     <ImageButton
         android:id="@+id/ImgBtnS"
@@ -26,6 +71,7 @@
         android:layout_width="188dp"
         android:layout_height="119dp"
         android:src="@drawable/kkm"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toTopOf="@+id/ImgBtnS"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -36,12 +82,12 @@
 
     <TextView
         android:id="@+id/TextKKM"
-        android:layout_width="100dp"
-        android:layout_height="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="KKM / CCC"
-        android:textColor="#F1F111"
+        android:textColor="@color/mapboxGrayLight"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/ImgBtnS"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,12 +98,12 @@
 
     <TextView
         android:id="@+id/TextS"
-        android:layout_width="150dp"
-        android:layout_height="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="S Binası / S Building "
-        android:textColor="#F1F111"
+        android:textColor="@color/mapboxGrayLight"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

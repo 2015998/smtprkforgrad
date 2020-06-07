@@ -64,6 +64,7 @@
         android:layout_below="@+id/linearLayout"
         android:onClick="onClick"
         android:text="Hospitals"
+        android:textColor="@color/colorPrimary"
         android:layout_alignParentLeft="true" />
 
     <Button
@@ -72,6 +73,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_toEndOf="@+id/B_hospital"
+        android:textColor="@color/mapboxPink"
         android:onClick="onClick"
         android:text="Restaurants"
         android:layout_toRightOf="@+id/B_hospital" />
@@ -82,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout"
         android:layout_toEndOf="@+id/B_restaurant"
+        android:textColor="@color/mapboxBlue"
         android:onClick="onClick"
         android:text="Schools"
         android:layout_toRightOf="@+id/B_restaurant" />

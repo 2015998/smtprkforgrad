@@ -397,6 +397,13 @@ public class FMCMapActivity extends FragmentActivity implements OnMapReadyCallba
     @Override
     public boolean onMarkerClick(Marker marker) {
         marker.setDraggable(true);
+        end_latitude = 35.249401;//marker.getPosition().latitude;
+        end_longitude =  33.022154;//marker.getPosition().longitude;
+
+        LatLng destination = new LatLng(35.249401, 33.022154);
+
+        Log.d("end_lat",""+end_latitude);
+        Log.d("end_lng",""+end_longitude);
         return false;
     }
 

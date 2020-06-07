@@ -6,6 +6,39 @@
     android:layout_height="match_parent"
     android:background="@color/input_login_hint">
 
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_login"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/TitleDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingStart="40dp"
+            android:text="SMART PARK - FIND MY CAR"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+
+            tools:layout_editor_absoluteY="16dp" />
+
+
+        <ImageView
+            android:id="@+id/Title"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <ImageView
         android:id="@+id/ivKKM"
         android:layout_width="wrap_content"
@@ -63,5 +96,65 @@
         android:visibility="gone"
         app:layout_constraintStart_toStartOf="@id/ivKKM"
         app:layout_constraintTop_toBottomOf="@id/ivKKM" />
+
+
+    <ImageView
+        android:id="@+id/ivS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="108dp"
+        android:src="@drawable/sb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf= "@id/ivLogoSlot2"/>
+
+    <ImageView
+        android:id="@+id/ivSBSlot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_422371"
+        app:layout_constraintStart_toStartOf="@id/ivS"
+        app:layout_constraintTop_toBottomOf="@id/ivS"
+        tools:layout_editor_absoluteY="242dp" />
+
+    <ImageView
+        android:id="@+id/ivSLogoSlot1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_car"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/ivS"
+        app:layout_constraintTop_toBottomOf="@id/ivS" />
+
+    <ImageView
+        android:id="@+id/SBSlot2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_422371"
+        app:layout_constraintStart_toStartOf="@id/ivS"
+        app:layout_constraintTop_toBottomOf="@id/ivS" />
+
+    <ImageView
+        android:id="@+id/ivSLogoSlot2"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_car"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="@id/ivS"
+        app:layout_constraintTop_toBottomOf="@id/ivS" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
