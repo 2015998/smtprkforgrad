@@ -29,7 +29,7 @@ public class FindMyCarActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),
-                        NMap.class);
+                        FMCMapActivity.class);
                 startActivity(i);
                 finish();
             }
@@ -41,7 +41,7 @@ public class FindMyCarActivity extends Activity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(),
-                        NMap.class);
+                        FMCMapActivity.class);
                 startActivity(i);
                 finish();
             }

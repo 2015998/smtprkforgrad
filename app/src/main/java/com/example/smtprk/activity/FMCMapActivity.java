@@ -41,7 +41,7 @@ import java.util.List;
 
 
 
-public class NMap extends FragmentActivity implements OnMapReadyCallback,
+public class FMCMapActivity extends FragmentActivity implements OnMapReadyCallback,
         GoogleApiClient.ConnectionCallbacks,
         GoogleApiClient.OnConnectionFailedListener,
         LocationListener,
@@ -63,7 +63,7 @@ public class NMap extends FragmentActivity implements OnMapReadyCallback,
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_destination_map);
+        setContentView(R.layout.activity_fmc_map);
 
         if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             checkLocationPermission();
@@ -187,7 +187,7 @@ public class NMap extends FragmentActivity implements OnMapReadyCallback,
                 dataTransfer[1] = url;
 
                 getNearbyPlacesData.execute(dataTransfer);
-                Toast.makeText(NMap.this, "Showing Nearby Hospitals", Toast.LENGTH_LONG).show();
+                Toast.makeText(FMCMapActivity.this, "Showing Nearby Hospitals", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.B_restaurant:
@@ -200,7 +200,7 @@ public class NMap extends FragmentActivity implements OnMapReadyCallback,
                 dataTransfer[1] = url;
 
                 getNearbyPlacesData.execute(dataTransfer);
-                Toast.makeText(NMap.this, "Showing Nearby Hospitals", Toast.LENGTH_LONG).show();
+                Toast.makeText(FMCMapActivity.this, "Showing Nearby Hospitals", Toast.LENGTH_LONG).show();
                 break;
             case R.id.B_school:
                 mMap.clear();
@@ -212,7 +212,7 @@ public class NMap extends FragmentActivity implements OnMapReadyCallback,
                 dataTransfer[1] = url;
 
                 getNearbyPlacesData.execute(dataTransfer);
-                Toast.makeText(NMap.this, "Showing Nearby Hospitals", Toast.LENGTH_LONG).show();
+                Toast.makeText(FMCMapActivity.this, "Showing Nearby Hospitals", Toast.LENGTH_LONG).show();
                 break;
 
             case R.id.B_to:
@@ -308,7 +308,7 @@ public class NMap extends FragmentActivity implements OnMapReadyCallback,
         mMap.animateCamera(CameraUpdateFactory.zoomTo(11));
 
 
-        Toast.makeText(NMap.this,"Your Current Location", Toast.LENGTH_LONG).show();
+        Toast.makeText(FMCMapActivity.this,"Your Current Location", Toast.LENGTH_LONG).show();
 
 
         //stop location updates
